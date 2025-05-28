@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "minista",
+    "dev": "start",
     "build": "minista build",
     "preview": "minista preview"
   },

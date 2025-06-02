@@ -9,7 +9,7 @@
     $minViewportWidth: $container-laptop-width;
   }
 
-  $maxSize: m ath.div($max, 16);
+  $maxSize: math.div($max, 16);
   $minSize: math.div($min, 16);
   $maxWidth: math.div($maxViewportWidth, 16);
   $minWidth: math.div($minViewportWidth, 16);

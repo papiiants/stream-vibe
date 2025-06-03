@@ -1,15 +1,23 @@
-import {defineConfig} from "minista"
+import { defineConfig } from "minista"
 import path from 'path'
 
 export default defineConfig({
-  root: "", base: "/", public: "public", out: "dist", assets: {
-    outDir: "assets", outName: "[name]", images: {
+  root: "",
+  base: "/",
+  public: "public",
+  out: "dist",
+  assets: {
+    outDir: "assets",
+    outName: "[name]",
+    images: {
       outDir: "assets/images",
       outName: "[name]",
       remoteName: "remote",
       optimize: {
         layout: "constrained",
-        breakpoints: [320, 400, 640, 800, 1024, 1280, 1440, 1920, 2560, 2880, 3840,],
+        breakpoints: [
+          320, 400, 640, 800, 1024, 1280, 1440, 1920, 2560, 2880, 3840,
+        ],
         resolution: [1, 2],
         format: "inherit",
         formatOptions: {},
@@ -19,54 +27,74 @@ export default defineConfig({
         fit: "cover",
         position: "centre",
       },
-    }, svgr: {
+    },
+    svgr: {
       svgrOptions: {},
-    }, icons: {
+    },
+    icons: {
       srcDir: "src/assets/icons",
       outDir: "assets/images",
       outName: "[dirname]",
       svgstoreOptions: {
         cleanSymbols: ["fill", "stroke", "stroke-linejoin", "stroke-width"],
       },
-    }, fonts: {
-      outDir: "assets/fonts", outName: "[name]",
-    }, bundle: {
+    },
+    fonts: {
+      outDir: "assets/fonts",
+      outName: "[name]",
+    },
+    bundle: {
       outName: "bundle",
-    }, partial: {
+    },
+    partial: {
       usePreact: false,
       useIntersectionObserver: true,
       outName: "hydrate",
       rootAttrSuffix: "partial-hydration",
       rootValuePrefix: "ph",
       rootDOMElement: "div",
-      rootStyle: {display: "contents"},
+      rootStyle: { display: "contents" },
       intersectionObserverOptions: {
-        root: null, rootMargin: "0px", thresholds: [0],
+        root: null,
+        rootMargin: "0px",
+        thresholds: [0],
       },
     },
-  }, resolve: {
+  },
+  resolve: {
     alias: [{
-      find: '@/', replacement: path.replacement('src') + '/'
-    }],
-  }, css: {
+        find: '@/',
+        replacement: path.resolve('src') + '/'
+      }],
+  },
+  css: {
     modules: {
       scopeBehaviour: "local",
       globalModulePaths: [],
       generateScopedName: undefined,
       hashPrefix: "",
       localsConvention: "camelCaseOnly",
-    }, preprocessorOptions: {
-      scss: {}, less: {}, stylus: {},
     },
-  }, markdown: {
+    preprocessorOptions: {
+      scss: {additionalData: `
+          @use '@/styles/helpers' as *;
+        `,
+        silenceDeprecations: ['legacy-js-api']},
+      less: {},
+      stylus: {},
+    },
+  },
+  markdown: {
     useRemarkGfm: true,
     useRehypeHighlight: true,
     remarkGfmOptions: {},
     rehypeHighlightOptions: {},
     mdxOptions: {
-      remarkPlugins: [], rehypePlugins: [],
+      remarkPlugins: [],
+      rehypePlugins: [],
     },
-  }, search: {
+  },
+  search: {
     outDir: "assets",
     outName: "search",
     include: ["**/*"],
@@ -82,23 +110,31 @@ export default defineConfig({
       katakana: true,
       kanji: true,
     },
-  }, delivery: {
+  },
+  delivery: {
     include: ["**/*"],
     exclude: ["/404"],
     trimTitle: "",
     sortBy: "path",
     archives: [],
-  }, beautify: {
-    useHtml: true, useAssets: false, htmlOptions: {
+  },
+  beautify: {
+    useHtml: true,
+    useAssets: false,
+    htmlOptions: {
       indent_size: 2,
       max_preserve_newlines: 0,
       indent_inner_html: true,
       extra_liners: [],
       inline: ["span", "strong", "b", "small", "del", "s", "code", "br", "wbr"],
-    }, cssOptions: {
-      indent_size: 2, space_around_combinator: true,
-    }, jsOptions: {
+    },
+    cssOptions: {
+      indent_size: 2,
+      space_around_combinator: true,
+    },
+    jsOptions: {
       indent_size: 2,
     },
-  }, vite: {},
+  },
+  vite: {},
 })

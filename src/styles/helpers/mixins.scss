@@ -15,7 +15,7 @@
 }
 
 @mixin flex-center($isInline: false) {
-  if($isInline) {
+  @if ($isInline) {
     display: inline-flex;
   } @else {
     display: flex;
@@ -74,6 +74,6 @@
 }
 
 @mixin disabled {
-  opacity: .5;
+  opacity: 0.5;
   cursor: not-allowed;
 }

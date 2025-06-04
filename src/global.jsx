@@ -15,7 +15,7 @@ export default function (props) {
       <Head htmlAttributes={{lang: 'en'}}>
         <title>Stream Vibe | {title}</title>
         <script
-          src="/src/main"
+          src="/src/main.js"
           type="module"
         />
         <link

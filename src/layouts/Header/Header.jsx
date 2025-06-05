@@ -1,6 +1,13 @@
+import './Header.scss'
+import Logo from "@/components/Logo";
+
 const Header = () => {
   return(
-    <header>HEADER</header>
+    (
+      <header className="header">
+        <div className="header__inner container"></div>
+       </header>
+    )
   )
 }
 

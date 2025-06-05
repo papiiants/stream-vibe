@@ -8,6 +8,7 @@ export default function (props) {
   const {
     children,
     title,
+    url,
   } = props
 
   return (
@@ -39,8 +40,8 @@ export default function (props) {
           rel="manifest"
           href="/site.webmanifest"
         />
-      </Head>
-      <Header />
+      </Head >
+      <Header url={url} />
       <Content>{children}</Content>
       <Footer />
     </>

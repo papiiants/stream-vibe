@@ -1,7 +1,10 @@
 import './Header.scss'
 import Logo from "@/components/Logo";
+import classNames from "classnames";
 
-const Header = () => {
+const Header = (props) => {
+  const {url} = props
+
   const menuItems = [
     {
       label: 'Home',
@@ -31,7 +34,9 @@ const Header = () => {
             <ul className="header__menu-list">
               {menuItems.map(({label, href}, index) => (
                 <li className="header__menu-item" key={index}>
-                  <a className="header__menu-link" href={href}>{label}</a>
+                  <a className={classNames('header__menu-link', {
+                    'is-active': href === url
+                  })} href={href}>{label}</a>
                 </li>
               ))}
             </ul>

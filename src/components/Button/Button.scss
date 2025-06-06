@@ -1,6 +1,7 @@
 .button {
   @include flex-center(true);
 
+  column-gap: 4px;
   padding: fluid(18, 14) fluid(24, 20);
   font-weight: 600;
   color: var(--color-white);
@@ -27,5 +28,19 @@
     color: var(--color-gray-60);
     background-color: var(--color-black-06);
     pointer-events: none;
+  }
+
+  &:has(.button__icon:only-child) {
+    padding: 0;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    &:has(.button__icon:only-child) {
+      @include square(44px);
+    }
+    .button__icon {
+      --iconSize: #{fluid-to-laptop(34, 24)};
+    }
   }
 }

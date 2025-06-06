@@ -47,11 +47,16 @@ const Header = (props) => {
             <Button
               className="header__button"
               label="Search"
+              isLabelHidden
+              iconName="search"
+              mode="transparent"
             />
             <Button
-              href="/"
+              className="heder__button"
               label="Notifications"
               isLabelHidden
+              iconName="notification"
+              mode="transparent"
             />
           </div>
         </div>

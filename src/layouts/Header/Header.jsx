@@ -32,36 +32,37 @@ const Header = (props) => {
         <div className="header__inner container">
           <Logo className="header__logo" loading="eager" />
 
-          <nav className="header__menu">
-            <ul className="header__menu-list">
-              {menuItems.map(({label, href}, index) => (
-                <li className="header__menu-item" key={index}>
-                  <a className={classNames('header__menu-link', {
-                    'is-active': href === url
-                  })} href={href}>{label}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <dialog className="header__overlay-menu-dialog">
+            <nav className="header__menu">
+              <ul className="header__menu-list">
+                {menuItems.map(({label, href}, index) => (
+                  <li className="header__menu-item" key={index}>
+                    <a className={classNames('header__menu-link', {
+                      'is-active': href === url
+                    })} href={href}>{label}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="header__actions">
+              <Button
+                className="header__button"
+                label="Search"
+                isLabelHidden
+                iconName="search"
+                mode="transparent"
+              />
+              <Button
+                className="heder__button"
+                label="Notifications"
+                isLabelHidden
+                iconName="notification"
+                mode="transparent"
+              />
+            </div>
+          </dialog>
 
-          <div className="header__actions">
-            <Button
-              className="header__button"
-              label="Search"
-              isLabelHidden
-              iconName="search"
-              mode="transparent"
-            />
-            <Button
-              className="heder__button"
-              label="Notifications"
-              isLabelHidden
-              iconName="notification"
-              mode="transparent"
-            />
-          </div>
-
-          <BurgerButton className="header__burger-button" />
+          <BurgerButton className="header__burger-button visible-tablet" />
         </div>
        </header>
     )

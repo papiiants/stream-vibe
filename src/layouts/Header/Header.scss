@@ -37,9 +37,20 @@
     padding: var(--container-padding-x);
     background-color: var(--color-black-20);
     border: none;
+    transition: var(--transition-duration);
+    transition-behavior: allow-discrete;
+    opacity: 0;
+    translate: 50%;
 
     &[open] {
       display: flex;
+      opacity: 1;
+      translate: 0;
+
+      @starting-style {
+        opacity: 0;
+        translate: 50%;
+      }
     }
 
     @include tablet-above {

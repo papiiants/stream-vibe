@@ -26,6 +26,11 @@
     column-gap: 16px;
   }
 
+  @mixin startingStyle {
+    opacity: 0;
+    translate: 50%;
+  }
+
   &__overlay-menu-dialog {
     position: fixed;
     inset: 0;
@@ -39,8 +44,7 @@
     border: none;
     transition: var(--transition-duration);
     transition-behavior: allow-discrete;
-    opacity: 0;
-    translate: 50%;
+    @include startingStyle;
 
     &[open] {
       display: flex;
@@ -48,8 +52,7 @@
       translate: 0;
 
       @starting-style {
-        opacity: 0;
-        translate: 50%;
+        @include startingStyle;
       }
     }
 

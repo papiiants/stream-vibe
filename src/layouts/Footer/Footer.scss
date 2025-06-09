@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--color-black-06);
+
+  &__menu {
+    --footer-menu-columns: 6;
+
+    display: grid;
+    grid-template-columns: repeat(var(--footer-menu-columns), 1fr);
+    gap: 30px fluid(30, 10);
+    padding-block: fluid(100, 50);
+    border-bottom: var(--border);
+
+    @include tablet {
+      --footer-menu-columns: 3;
+    }
+
+    @include mobile {
+      --footer-menu-columns: 2;
+    }
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: fluid(24, 16);
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: fluid(14, 8);
+    }
+  }
+}

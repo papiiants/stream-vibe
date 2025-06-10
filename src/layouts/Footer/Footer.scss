@@ -32,4 +32,18 @@
       row-gap: fluid(14, 8);
     }
   }
+
+  &__extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+    padding-top: fluid-to-laptop(24,20);
+    padding-bottom: fluid(50, 20);
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
 }

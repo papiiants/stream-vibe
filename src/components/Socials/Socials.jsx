@@ -24,6 +24,7 @@ const Socials = (props) => {
               label={label}
               isLabelHidden
               iconName={iconName}
+              hasFillIcon
             />
           </li>
         ))}

@@ -27,7 +27,7 @@
   }
 }
 
-.hidden-nobile {
+.hidden-mobile {
   @include mobile {
     display: none !important;
   }

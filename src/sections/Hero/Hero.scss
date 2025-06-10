@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-bottom: var(--section-padding-y);
   text-align: center;
 
   @include mobile {
@@ -24,11 +25,13 @@
         to top,
         var(--heroGradientColorStart) 0%,
         var(--heroGradientColorEnd) 100%
-    ) 50% 100%/100% var(--heroGradientHeight);
+    ) 50% 101%/100% var(--heroGradientHeight);
 
     @include flex-center;
 
     flex-grow: 1;
+    padding-top: fluid(195, 150);
+    padding-bottom: fluid(131, 50);
     background:
       var(--heroGradienTop),
       var(--heroGradientBottom),
@@ -51,5 +54,9 @@
 
   &__description {
     margin-bottom: fluid(50, 40);
+  }
+
+  &__body {
+    padding-bottom: fluid(50, 20);
   }
 }

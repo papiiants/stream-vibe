@@ -1,4 +1,6 @@
 .category-card {
+  --categoryCartImagesGradientOpacity: 1;
+
   display: inline-flex;
   flex-direction: column;
   padding: fluid(30, 20);
@@ -10,7 +12,15 @@
     border-radius: var(--border-radius-m);
   }
 
+  @include hover {
+    --categoryCartImagesGradientOpacity: 0;
+
+    color: var(--color-white);
+    border-color: currentColor;
+  }
+
   &__images {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
@@ -20,6 +30,8 @@
 
       content: '';
       background-image: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0%, var(--color-black-10) 101.79%);
+      opacity: var(--categoryCartImagesGradientOpacity);
+      transition-duration: var(--transition-duration);
     }
   }
 
@@ -36,7 +48,7 @@
 
   &__body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     column-gap: 10px;
   }

@@ -19,15 +19,15 @@ const CategoryCard = (props) => {
           />
         ))}
       </div>
-      <span className="category-card__body">
+      <div className="category-card__body">
         <h3 className="category-card__title">
           {title}
-          <Icon
-            className="category-card__icon"
-            name="arrow-right"
-          />
         </h3>
-      </span>
+        <Icon
+          className="category-card__icon"
+          name="arrow-right"
+        />
+      </div>
     </a>
   )
 }

@@ -9,8 +9,11 @@ const Slider = (props) => {
   } = props
 
   return (
-    <div className="slider">
-      <div className="slider__swiper">
+    <div
+      className="slider"
+      data-js-slider=""
+    >
+      <div className="slider__swiper" data-js-slider-swiper="">
         <ul className="slider__list swiper-wrapper">
           {children.map((slide, index) => (
             <li

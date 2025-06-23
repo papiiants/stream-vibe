@@ -22,6 +22,7 @@ const Categories = () => {
       isSectionHiddenOnMobile
     >
       <Slider
+        isBeyondTheViewportOnMobileS
         navigationTargetElementId={sliderNavigationId}
       >
         {categoryItems.map((categoryItem, index) => (

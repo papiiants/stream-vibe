@@ -13,8 +13,8 @@ export default function () {
     <>
       <Hero />
       <Categories />
-      <Questions />
       <Devices />
+      <Questions />
     </>
   )
 }

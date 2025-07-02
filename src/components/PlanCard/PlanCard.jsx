@@ -18,9 +18,9 @@ const PlanCard = (props) => {
       </div>
       <div className="plan-card__conditions">
         <span className="plan-card__price">{price.value}</span>
-        <span className="plan-card__period">{price.period}</span>
+        <span className="plan-card__period">{price.label}</span>
       </div>
-      <div className="pan-card__actions">
+      <div className="plan-card__actions">
         <Button
           label="Start Free Trial"
           href="/subscriptions"

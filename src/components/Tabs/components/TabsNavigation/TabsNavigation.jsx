@@ -1,6 +1,8 @@
 import './TabsNavigation.scss'
 import classNames from 'classnames'
-import getIdFromTitle from "@/utils/getIdFromTitle";
+import getIdFromTitle from "@/utils/getIdFromTitle"
+import getTabsElementsIdsFromTitle
+  from "@/components/Tabs/utils/getTabsElementsIdsFromTitle"
 
 const TabsNavigation = (props) => {
   const {

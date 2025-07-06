@@ -1,6 +1,7 @@
 import './Tabs.scss'
 import classNames from 'classnames'
-import getIdFromTitle from "@/utils/getIdFromTitle";
+import getTabsElementsIdsFromTitle
+  from "@/components/Tabs/utils/getTabsElementsIdsFromTitle";
 
 const Tabs = (props) => {
   const {
@@ -28,9 +29,10 @@ const Tabs = (props) => {
             isActive
           } = item
 
-          const titleFormatted = getIdFromTitle(title)
-          const buttonId = `${titleFormatted}-tab`
-          const contentId = `${titleFormatted}-tabpanel`
+          const {
+            buttonId,
+            contentId
+          } = getTabsElementsIdsFromTitle(title)
 
           return (
             <div

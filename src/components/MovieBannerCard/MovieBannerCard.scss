@@ -46,4 +46,10 @@
       column-gap: fluid-to-laptop(10, 8);
     }
   }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
 }

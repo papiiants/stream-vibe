@@ -44,6 +44,7 @@
     @include mobile {
       flex-direction: column;
       column-gap: fluid-to-laptop(10, 8);
+      width: 100%;
     }
   }
 
@@ -51,5 +52,11 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
+  }
+
+  &__play-button {
+    @include mobile-s {
+      width: 100%;
+    }
   }
 }

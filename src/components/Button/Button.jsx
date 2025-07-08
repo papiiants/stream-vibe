@@ -8,7 +8,7 @@ const Button = (props) => {
     href,
     target,
     /*
-    * '' (default) | 'transparent' | 'black-10' | 'black-08'
+    * '' (default) | 'transparent' | 'black-10' | 'black-08' | 'black-06'
     * */
     mode= '',
     type = 'button',

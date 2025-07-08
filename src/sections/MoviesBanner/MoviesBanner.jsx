@@ -1,5 +1,4 @@
 import './MoviesBanner.scss'
-import classNames from 'classnames'
 
 const MoviesBanner = () => {
   const titleId = 'movies-banner-title'

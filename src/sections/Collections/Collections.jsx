@@ -1,11 +1,7 @@
 import './Collections.scss'
-import classNames from 'classnames'
 import Tabs from "@/components/Tabs";
 
-const Collections = (props) => {
-  const {
-    className,
-  } = props
+const Collections = () => {
 
   return (
     <Tabs

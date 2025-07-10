@@ -14,9 +14,12 @@ const Badge = (props) => {
 
   return (
     <div
-      className={classNames(className, 'badge')}
+      className={classNames(className, 'badge', {
+        [`badge--mode-${mode}`]: mode,
+        'badge--big': isBig,
+      })}
     >
-      Badge
+      {children}
     </div>
   )
 }

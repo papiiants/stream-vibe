@@ -8,7 +8,7 @@ const Section = (props) => {
     titleId,
     description,
     actions,
-    isSectionHiddenOnMobile = false,
+    isActionsHiddenOnMobile = false,
     children,
   } = props
 
@@ -17,29 +17,27 @@ const Section = (props) => {
       className={classNames(className, 'section container')}
       aria-label={titleId}
     >
-      {title && description && (
-        <header className="section__header">
-          <div className="section__info">
-            <h2 className="section__title h3" id={titleId}>
-              {title}
-            </h2>
-            {description && (
-              <div className="section__description">
-                <p>{description}</p>
-              </div>
-            )}
-          </div>
-          {actions && (
-            <div
-              className={classNames('section__actions', {
-                'hidden-mobile': isSectionHiddenOnMobile
-              })}
-            >
-              {actions}
+      <header className="section__header">
+        <div className="section__info">
+          <h2 className="section__title h3" id={titleId}>
+            {title}
+          </h2>
+          {description && (
+            <div className="section__description">
+              <p>{description}</p>
             </div>
           )}
-        </header>
-      )}
+        </div>
+        {actions && (
+          <div
+            className={classNames('section__actions', {
+              'hidden-mobile': isActionsHiddenOnMobile,
+            })}
+          >
+            {actions}
+          </div>
+        )}
+      </header>
       <div className="section__body">
         {children}
       </div>

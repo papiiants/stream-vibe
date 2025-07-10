@@ -1,8 +1,10 @@
 .slider {
   position: relative;
-  
+
   &--beyond-the-viewport-on-mobile-s {
-    width: calc(100vw - var(--container-padding-x));
+    @include mobile-s {
+      width: calc(100vw - var(--container-padding-x));
+    }
   }
 
   &__scrollbar {
@@ -20,5 +22,4 @@
       border-radius: inherit;
     }
   }
-
 }

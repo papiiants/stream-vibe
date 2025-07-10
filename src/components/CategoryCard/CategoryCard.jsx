@@ -1,11 +1,13 @@
 import './CategoryCard.scss'
-import {Image} from "minista";
-import Icon from "@/components/Icon";
+import {Image} from 'minista'
+import Icon from '@/components/Icon'
+import Badge from '@/components/Badge'
 
 const CategoryCard = (props) => {
   const {
     title,
     images =  [],
+    badge,
   } = props
 
   return (
@@ -21,7 +23,10 @@ const CategoryCard = (props) => {
       </div>
       <div className="category-card__body">
         <h3 className="category-card__title">
-          {title}
+          <span>{title}</span>
+          {badge && (
+            <Badge />
+          )}
         </h3>
         <Icon
           className="category-card__icon"

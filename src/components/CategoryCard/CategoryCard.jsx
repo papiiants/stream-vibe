@@ -25,7 +25,13 @@ const CategoryCard = (props) => {
         <h3 className="category-card__title">
           <span>{title}</span>
           {badge && (
-            <Badge />
+            <Badge
+              className="category-card__badge"
+              mode="accent"
+              isBig={true }
+            >
+              {badge}
+            </Badge>
           )}
         </h3>
         <Icon

@@ -15,7 +15,7 @@ const Badge = (props) => {
   return (
     <div
       className={classNames(className, 'badge', {
-        [`badge--mode-${mode}`]: mode,
+        [`badge--${mode}`]: mode,
         'badge--big': isBig,
       })}
     >

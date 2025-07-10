@@ -23,7 +23,6 @@ const CategoryCard = (props) => {
       </div>
       <div className="category-card__body">
         <h3 className="category-card__title">
-          <span>{title}</span>
           {badge && (
             <Badge
               className="category-card__badge"
@@ -33,6 +32,7 @@ const CategoryCard = (props) => {
               {badge}
             </Badge>
           )}
+          <span>{title}</span>
         </h3>
         <Icon
           className="category-card__icon"

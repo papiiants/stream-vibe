@@ -206,6 +206,134 @@ const collectionGroups = [
             },
           }
         },
+      },
+      {
+        title: 'Trending Now',
+        movieItems: [
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Bhai Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Surah pe Mangal',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Ant-Man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Bhai Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Surah pe Mangal',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Ant-Man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Bhai Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Surah pe Mangal',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Ant-Man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Bhai Jaan',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 57min',
+            views: '1.5K',
+          },
+          {
+            title: 'Surah pe Mangal',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '2h 10min',
+            views: '1.8K',
+          },
+          {
+            title: 'Pathan',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '2h 20min',
+            views: '3K',
+          },
+          {
+            title: 'Ant-Man',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 42min',
+            views: '5K',
+          },
+        ],
       }
     ],
   }

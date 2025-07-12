@@ -8,6 +8,7 @@ const MovieCard = (props) => {
     imgSrc,
     duration,
     views,
+    released,
     href = '/movie',
   } = props
 
@@ -39,6 +40,11 @@ const MovieCard = (props) => {
             hasFillIcon
           >
             {views}
+          </Badge>
+        )}
+        {released && (
+          <Badge className="movie-card__released-badge">
+            Released at <time className="movie-card__released-badge-label" dateTime={released.dateTime }>{released.label}</time>
           </Badge>
         )}
       </div>

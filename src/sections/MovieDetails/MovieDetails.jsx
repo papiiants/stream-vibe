@@ -6,6 +6,7 @@ import Button from '@/components/Button'
 import ReviewCard from '@/components/ReviewCard'
 import Icon from '@/components/Icon'
 import Tags from '@/components/Tags'
+import Ratings from '@/components/Ratings'
 
 const MovieDetails = () => {
   const titleId = 'movie-details-title'
@@ -253,7 +254,12 @@ const MovieDetails = () => {
                 <Icon name="star" />
                 <span>Ratings</span>
               </h3>
-
+              <Ratings
+                items={[
+                  {title: 'IMDb', ratingValue: 4.5,},
+                  {title: 'Streamvibe', ratingValue: 4,},
+                ]}
+              />
             </div>
             <div className="movie-details__group">
               <h3 className="movie-details__title">

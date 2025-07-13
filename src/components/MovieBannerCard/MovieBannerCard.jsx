@@ -5,6 +5,7 @@ import Button from "@/components/Button";
 const MovieBannerCard = (props) => {
   const {
     title,
+    titleId,
     TitleTag = 'h2',
     description,
     imgSrc,
@@ -19,7 +20,10 @@ const MovieBannerCard = (props) => {
       />
       <div className="movie-banner-card__inner">
         <div className="movie-banner-card__body">
-          <TitleTag className="movie-banner-card__title h3">
+          <TitleTag
+            className="movie-banner-card__title h3"
+            id={titleId}
+          >
             {title}
           </TitleTag>
           <div className="movie-banner-card__description hidden-mobile">

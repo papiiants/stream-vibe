@@ -4,6 +4,7 @@ import Slider from "@/components/Slider";
 import PersonCard from "@/components/PersonCard";
 import Button from '@/components/Button'
 import ReviewCard from '@/components/ReviewCard'
+import Icon from '@/components/Icon'
 
 const MovieDetails = () => {
   const titleId = 'movie-details-title'
@@ -226,7 +227,62 @@ const MovieDetails = () => {
         </div>
       </div>
       <aside className="movie-details__info">
-        <div className="movie-details__panel"></div>
+        <div className="movie-details__panel">
+          <div className="movie-details__groups">
+            <div className="movie-details__group">
+              <h3 className="movie-details__title">
+                <Icon name="calendar" />
+                <span>Released Year</span>
+              </h3>
+              <div className="movie-details__description">
+                <time className="h6" dateTime="2022">2022</time>
+              </div>
+            </div>
+            <div className="movie-details__group">
+              <h3 className="movie-details__title">
+                <Icon name="translate" />
+                <span>Available Languages</span>
+              </h3>
+
+            </div>
+            <div className="movie-details__group">
+              <h3 className="movie-details__title">
+                <Icon name="calendar" />
+                <span>Released Year</span>
+              </h3>
+              <div className="movie-details__description">
+                <time className="h6" dateTime="2022">2022</time>
+              </div>
+            </div>
+            <div className="movie-details__group">
+              <h3 className="movie-details__title">
+                <Icon name="calendar" />
+                <span>Released Year</span>
+              </h3>
+              <div className="movie-details__description">
+                <time className="h6" dateTime="2022">2022</time>
+              </div>
+            </div>
+            <div className="movie-details__group">
+              <h3 className="movie-details__title">
+                <Icon name="calendar" />
+                <span>Released Year</span>
+              </h3>
+              <div className="movie-details__description">
+                <time className="h6" dateTime="2022">2022</time>
+              </div>
+            </div>
+            <div className="movie-details__group">
+              <h3 className="movie-details__title">
+                <Icon name="calendar" />
+                <span>Released Year</span>
+              </h3>
+              <div className="movie-details__description">
+                <time className="h6" dateTime="2022">2022</time>
+              </div>
+            </div>
+          </div>
+        </div>
       </aside>
     </section>
   )

@@ -1,10 +1,79 @@
 import './MovieDetails.scss'
 import SliderNavigation from "@/components/Slider/components/SliderNavigation";
 import Slider from "@/components/Slider";
+import PersonCard from "@/components/PersonCard";
 
 const MovieDetails = () => {
   const titleId = 'movie-details-title'
   const castSliderNavigationId = 'movie-cast-slider-navigation'
+
+  const castItems = [
+    {
+      imgSrc: '/src/assets/images/people/1.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/2.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/3.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/4.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/5.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/6.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/7.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/8.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+
+    {
+      imgSrc: '/src/assets/images/people/1.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/2.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/3.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/4.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/5.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/6.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/7.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+    {
+      imgSrc: '/src/assets/images/people/8.jpg',
+      imgAlt: 'Hampur Shampur',
+    },
+  ]
 
   return (
     <section
@@ -52,7 +121,9 @@ const MovieDetails = () => {
               },
             }}
           >
-
+            {castItems.map((castItem, index) => (
+              <PersonCard {...castItem} key={index} />
+            ))}
           </Slider>
         </div>
         <div className="movie-details__panel"></div>

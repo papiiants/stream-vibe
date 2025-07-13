@@ -11,7 +11,7 @@ const Ratings = (props) => {
       <ul className="rating__list">
         {items.map(({ title, ratingValue }, index) => (
           <li className="rating__item" key={index}>
-            <h4 className="ratings__title h6">{title}</h4>
+            <h4 className="ratings__title">{title}</h4>
             <RatingView
               value={ratingValue}
               lagel={ratingValue}

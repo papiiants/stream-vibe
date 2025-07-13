@@ -263,30 +263,32 @@ const MovieDetails = () => {
             </div>
             <div className="movie-details__group">
               <h3 className="movie-details__title">
-                <Icon name="calendar" />
-                <span>Released Year</span>
+                <Icon name="genres" />
+                <span>Genres</span>
               </h3>
-              <div className="movie-details__description">
-                <time className="h6" dateTime="2022">2022</time>
-              </div>
+              <Tags
+                items={['Action', 'Adventure']}
+              />
             </div>
             <div className="movie-details__group">
               <h3 className="movie-details__title">
-                <Icon name="calendar" />
-                <span>Released Year</span>
+                Director
               </h3>
-              <div className="movie-details__description">
-                <time className="h6" dateTime="2022">2022</time>
-              </div>
+             <PersonCard
+              name="Rishab Shetty"
+              subtitle="From India"
+              imgSrc="/src/assets/images/people/director.jpg"
+             />
             </div>
             <div className="movie-details__group">
               <h3 className="movie-details__title">
-                <Icon name="calendar" />
-                <span>Released Year</span>
+                Music
               </h3>
-              <div className="movie-details__description">
-                <time className="h6" dateTime="2022">2022</time>
-              </div>
+              <PersonCard
+                name="B. Ajaneesh Loknath"
+                subtitle="From India"
+                imgSrc="/src/assets/images/people/music.jpg"
+              />
             </div>
           </div>
         </div>

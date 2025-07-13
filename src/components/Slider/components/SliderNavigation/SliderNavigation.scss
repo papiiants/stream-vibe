@@ -1,7 +1,7 @@
 .slider-navigation {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 
   &--tile {
     column-gap: fluid-to-laptop(16, 12);
@@ -23,6 +23,13 @@
     }
   }
 
+  &--abs-bottom {
+    position: absolute;
+    z-index: 1;
+    inset-inline: fluid-to-laptop(50, 40);
+    bottom: fluid-to-laptop(20, 16);
+  }
+
   &__pagination {
     display: flex;
     column-gap: 3px;
@@ -39,12 +46,5 @@
         background-color: var(--color-red-45);
       }
     }
-  }
-
-  &--abs-bottom {
-    position: absolute;
-    z-index: 1;
-    inset-inline: fluid-to-laptop(50, 40);
-    bottom: fluid-to-laptop(20, 16);
   }
 }

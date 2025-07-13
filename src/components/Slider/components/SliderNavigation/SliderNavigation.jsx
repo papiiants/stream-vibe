@@ -1,22 +1,22 @@
 import './SliderNavigation.scss'
 import classNames from 'classnames'
-import Button from "@/components/Button";
+import Button from '@/components/Button'
 
 const SliderNavigation = (props) => {
   const {
     className,
     id,
     hasPagination = true,
-    /*
-     * '' default | 'tile'
+    /**
+     * '' (default) | 'tile' | 'rounded'
      */
     mode = '',
-    /*
-     * '' (default) | abs-bottom | rounded
+    /**
+     * '' (default) | 'abs-bottom'
      */
     position = '',
     isHiddenMobile,
-    buttonMode = 'black-10'
+    buttonMode = 'black-10',
   } = props
 
   return (
@@ -32,7 +32,7 @@ const SliderNavigation = (props) => {
       <Button
         className="slider-navigation__arrow-button slider-navigation__arrow-button--previous"
         mode={buttonMode}
-        name="arrow-left"
+        iconName="arrow-left"
         label="Previous slide"
         isLabelHidden
         extraAttrs={{
@@ -48,7 +48,7 @@ const SliderNavigation = (props) => {
       <Button
         className="slider-navigation__arrow-button slider-navigation__arrow-button--next"
         mode={buttonMode}
-        name="arrow-right"
+        iconName="arrow-right"
         label="Next slide"
         isLabelHidden
         extraAttrs={{

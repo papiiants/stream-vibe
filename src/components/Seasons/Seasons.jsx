@@ -1,5 +1,8 @@
 import './Seasons.scss'
 import classNames from 'classnames'
+import AccordionGroup from '@/components/AccordionGroup'
+import seasonsItems from '@/components/Seasons/seasonsItems'
+import Accordion from '@/components/Accordion'
 
 const Seasons = (props) => {
   const {
@@ -7,11 +10,22 @@ const Seasons = (props) => {
   } = props
 
   return (
-    <div
-      className={classNames(className, 'seasons')}
+    <AccordionGroup
+      mode="dark"
+      isOrderedList={false}
     >
-      Seasons
-    </div>
+      {seasonsItems.map(({ title, subtitle, episodes }, index) => (
+        <Accordion
+          title={title}
+          id={`season-${index }`}
+          name="seasons"
+          isOpen={index === 0}
+          key={index}
+        >
+
+        </Accordion>
+      ))}
+    </AccordionGroup>
   )
 }
 

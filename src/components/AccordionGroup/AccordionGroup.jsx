@@ -6,6 +6,7 @@ const AccordionGroup = (props) => {
     /**
      * '' (default) | 'dark'
      */
+    className,
     mode = '',
     columns = 1,
     children,
@@ -17,7 +18,7 @@ const AccordionGroup = (props) => {
 
   return (
     <ListTag
-      className={classNames('accordion-group', {
+      className={classNames(className, 'accordion-group', {
         [`accordion-group--${columns}-columns`]: columns > 1,
         'accordion-group--has-counter': isOrderedList,
         [`accordion-group--${mode}`]: mode,

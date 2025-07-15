@@ -32,6 +32,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    column-gap: fluid(10, 6);
     min-height: var(--accordionGroupCounterHeight);
     padding-right: 50px;
     color: inherit;
@@ -57,6 +58,12 @@
     &::after {
       rotate: 90deg;
     }
+  }
+
+  &__subtitle {
+    font-size: 0.75em;
+    font-weight: 500;
+    color: var(--color-gray-60);
   }
 
   &__content {

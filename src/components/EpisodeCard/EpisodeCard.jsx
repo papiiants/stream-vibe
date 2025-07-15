@@ -31,21 +31,16 @@ const EpisodeCard = (props) => {
           title={playButtonTitle}
         >
           <Icon
-            className="episode-card__play-button"
+            className="episode-card__play-button-icon"
             name="play-circle"
           />
         </button>
       </div>
       <div className="episode-card__body">
         <div className="episode-card__info">
-          <h4 className="episode-card__title h6">
-            {title}
-          </h4>
+          <h4 className="episode-card__title h6">{title}</h4>
           <div className="episode-card__duration">
-            <Icon
-              name="clock_stroke"
-              ariaLabel="Duration"
-            />
+            <Icon name="clock_stroke" ariaLabel="Duration" />
             <span>{duration}</span>
           </div>
         </div>

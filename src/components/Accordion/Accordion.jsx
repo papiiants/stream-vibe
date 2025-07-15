@@ -5,6 +5,7 @@ const Accordion = (props) => {
   const {
     titleLevelClassName = 'h5',
     title,
+    subtitle,
     id,
     name,
     isOpen,
@@ -21,6 +22,9 @@ const Accordion = (props) => {
         <summary className="accordion__summary">
           <h3 className={classNames('accordion__title', titleLevelClassName)}>
             <span role="term" aria-details={id}>{title}</span>
+            {subtitle && (
+              <span className="accordion__subtitle">{subtitle}</span>
+            )}
           </h3>
         </summary>
       </details>

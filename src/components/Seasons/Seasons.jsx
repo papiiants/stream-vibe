@@ -12,6 +12,7 @@ const Seasons = () => {
     >
       {seasonsItems.map(({ title, subtitle, episodes }, index) => (
         <Accordion
+          className="seasons"
           titleLevelClassName="h4"
           title={title}
           subtitle={subtitle}
@@ -21,7 +22,13 @@ const Seasons = () => {
           key={index}
           isArrowButton
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, saepe?
+          <ul className="seasons__list">
+            {episodes.map((episode, index) => (
+              <li className="seasons__item" key={index}>
+                {episode.title}
+              </li>
+            ))}
+          </ul>
         </Accordion>
       ))}
     </AccordionGroup>

@@ -1,7 +1,9 @@
 import './Accordion.scss'
+import classNames from 'classnames'
 
 const Accordion = (props) => {
   const {
+    titleLevelClassName = 'h5',
     title,
     id,
     name,
@@ -17,7 +19,7 @@ const Accordion = (props) => {
         open={isOpen}
       >
         <summary className="accordion__summary">
-          <h3 className="accordion__title h5">
+          <h3 className={classNames('accordion__title', titleLevelClassName)}>
             <span role="term" aria-details={id}>{title}</span>
           </h3>
         </summary>

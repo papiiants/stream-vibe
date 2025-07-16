@@ -15,6 +15,7 @@ const Field = (props) => {
     isRequired,
     inputMove,
     mask,
+    before,
   } = props
 
   const Component = type === 'textarea' ? 'textarea' : 'input'
@@ -39,6 +40,7 @@ const Field = (props) => {
         )}
       </label>
       <div className="field__body">
+        {before}
         <Component
           className="field__control"
           id={id}

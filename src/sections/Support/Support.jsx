@@ -55,16 +55,17 @@ const Support = () => {
           placeholder="(000) 000-00-00"
           inputMove="tel"
           mask="(000) 000-00-00"
-          before={(
+          renderBefore={(buttonClassName) => (
             <Select
               label="Phone number prefix"
+              buttonClassName={buttonClassName}
               options={
-              [
-                {value: '+34', isSelected: true,},
-                {value: '+1',},
-                {value: '+2',},
-                {value: '+3',},
-              ]
+                [
+                  {value: '+34', isSelected: true,},
+                  {value: '+1',},
+                  {value: '+2',},
+                  {value: '+3',},
+                ]
               }
             />
           )}

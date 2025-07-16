@@ -14,6 +14,7 @@ const Select = (props) => {
      * }>
      */
     options = [],
+    buttonClassName,
   } = props
 
   const IDs = {
@@ -36,7 +37,7 @@ const Select = (props) => {
         {label}
       </label>
       <select
-        className="select__original-control"
+        className={classNames('select__original-control', buttonClassName)}
         id={IDs.originalControl}
         tabIndex={-1}
         defaultValue={selectedOption.value}
@@ -48,7 +49,7 @@ const Select = (props) => {
       </select>
       <div className="select__body">
         <div
-          className="select__button"
+          className={classNames('select__button', buttonClassName)}
           role="combobox"
           aria-expanded={false}
           aria-haspopup="listbox"

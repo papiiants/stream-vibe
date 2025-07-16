@@ -49,8 +49,9 @@ const Support = () => {
         <Field
           className="support__form-cell"
           label="Phone Number"
-          placeholder="(34) 999-99-99"
+          placeholder="(000) 000-00-00"
           inputMove="tel"
+          mask="(000) 000-00-00"
         />
         <Field
           className="support__form-cell support__form-cell--wide"

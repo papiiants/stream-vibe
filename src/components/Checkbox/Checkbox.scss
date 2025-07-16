@@ -23,7 +23,9 @@
     border-radius: var(--border-radius-xxxs);
 
     &:not(:checked) {
-      @include hide;
+      &::after {
+        @include hide;
+      }
     }
 
     &:user-invalid {
@@ -40,6 +42,7 @@
     &:required {
       & + .checkbox__label::after {
         content: ' *' / 'Requared';
+        color: var(--color-red-45);
 
       }
     }

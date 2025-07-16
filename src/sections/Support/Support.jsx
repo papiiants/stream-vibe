@@ -3,6 +3,7 @@ import {Image} from 'minista'
 import Field from '@/components/Field'
 import Checkbox from '@/components/Checkbox'
 import Button from '@/components/Button'
+import Select from '@/components/Select'
 
 const Support = () => {
   const titleId = 'support-title'
@@ -54,6 +55,19 @@ const Support = () => {
           placeholder="(000) 000-00-00"
           inputMove="tel"
           mask="(000) 000-00-00"
+          before={(
+            <Select
+              label="Phone number prefix"
+              options={
+              [
+                {value: '+34', isSelected: true,},
+                {value: '+1',},
+                {value: '+2',},
+                {value: '+3',},
+              ]
+              }
+            />
+          )}
         />
         <Field
           className="support__form-cell support__form-cell--wide"

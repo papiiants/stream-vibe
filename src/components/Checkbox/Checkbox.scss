@@ -38,7 +38,7 @@
     }
 
     &:required {
-      & + checkbox__label::after {
+      & + .checkbox__label::after {
         content: ' *' / 'Requared';
 
       }

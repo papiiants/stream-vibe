@@ -1,6 +1,4 @@
 import './Table.scss'
-import classNames from 'classnames'
-import * as test from 'node:test'
 
 const Table = (props) => {
   const {
@@ -11,7 +9,7 @@ const Table = (props) => {
 
   return (
     <table className={className}>
-      {headCells > 0 && (
+      {headCells.length > 0 && (
         <thead>
           <tr>
             {headCells.map(({ children, width }, index) => (

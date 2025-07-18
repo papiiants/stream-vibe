@@ -1,6 +1,7 @@
 table {
   --tableBorder: var(--border);
 
+  border: var(--tableBorder);
   border-collapse: separate;
   border-radius: var(--border-radius-l);
 
@@ -34,5 +35,6 @@ table {
     font-size: fluid-to-laptop(20, 18);
     font-weight: 600;
     color: var(--color-white);
+    text-align: left;
   }
 }

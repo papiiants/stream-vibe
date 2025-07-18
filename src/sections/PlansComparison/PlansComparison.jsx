@@ -1,17 +1,18 @@
 import './PlansComparison.scss'
 import classNames from 'classnames'
+import Section from '@/layouts/Section'
 
-const PlansComparison = (props) => {
-  const {
-    className,
-  } = props
+const PlansComparison = () => {
 
   return (
-    <div
-      className={classNames(className, 'plans-comparison')}
-    >
-      PlansComparison
-    </div>
+   <Section
+    title="Compare our plans and find the right one for you"
+    titleId="plans-comparison-title"
+    description="StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you."
+
+   >
+
+   </Section>
   )
 }
 

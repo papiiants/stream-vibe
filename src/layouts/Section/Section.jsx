@@ -15,7 +15,7 @@ const Section = (props) => {
   return (
     <section
       className={classNames(className, 'section container')}
-      aria-label={titleId}
+      aria-labelledby={titleId}
     >
       {title && (
         <header className="section__header">

@@ -50,13 +50,15 @@
     transition-behavior: allow-discrete;
     @include startingStyle;
 
-    &[open] {
-      display: flex;
-      opacity: 1;
-      translate: 0;
+    @include tablet {
+      &[open] {
+        display: flex;
+        opacity: 1;
+        translate: 0;
 
-      @starting-style {
-        @include startingStyle;
+        @starting-style {
+          @include startingStyle;
+        }
       }
     }
 

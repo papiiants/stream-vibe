@@ -50,14 +50,14 @@ const Footer = () => {
           {menuItems.map(({title, links, socialLinks}, index) => (
             <div className="footer__menu-column" key={index}>
               <a
-                href="/"
+                href="/stream-vibe/"
                 className="footer__menu-title h6"
               >{title}</a>
               {links?.length > 0 && (
                 <ul className="footer__menu-list">
                   {links.map((link, index) => (
                     <li className="footer__menu-item" key={index}>
-                      <a className="footer__menu-link" href="/">
+                      <a className="footer__menu-link" href="/stream-vibe/">
                         {link}
                       </a>
                     </li>

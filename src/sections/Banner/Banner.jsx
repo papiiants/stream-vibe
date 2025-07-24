@@ -22,7 +22,7 @@ const Banner = () => {
         <Button
           className="banner__button"
           label="Start a Free Trail"
-          href="/subscriptions"
+          href="/stream-vibe/subscriptions"
         />
       </div>
     </Section>

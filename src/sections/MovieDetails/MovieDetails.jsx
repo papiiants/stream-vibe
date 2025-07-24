@@ -209,7 +209,7 @@ const MovieDetails = (props) => {
               mode="black-08"
               iconName="plus"
               label="Add Your Review"
-              href="/"
+              href="/stream-vibe/"
             />
           </header>
           <Slider

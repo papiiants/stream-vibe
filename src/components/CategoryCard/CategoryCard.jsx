@@ -11,7 +11,7 @@ const CategoryCard = (props) => {
   } = props
 
   return (
-    <a className="category-card" href="/movies">
+    <a className="category-card" href="/stream-vibe/movies">
       <div className="category-card__images">
         {images.map((imgSrc, index) => (
           <Image

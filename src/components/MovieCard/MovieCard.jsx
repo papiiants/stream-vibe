@@ -12,7 +12,7 @@ const MovieCard = (props) => {
     released,
     rating,
     season,
-    href = '/movie',
+    href = '/stream-vibe/movie',
   } = props
 
   return (

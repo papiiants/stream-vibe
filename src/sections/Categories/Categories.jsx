@@ -17,6 +17,7 @@ const Categories = () => {
         <SliderNavigation
           mode="tile"
           id={sliderNavigationId}
+          isHiddenMobile
         />
       )}
       isSectionHiddenOnMobile
